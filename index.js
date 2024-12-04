@@ -1,6 +1,9 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
-
+const fullscreenBtn = document.getElementById("fullscreenBtn");
+fullscreenBtn.addEventListener("click", () => {
+  canvas.requestFullscreen();
+});
 canvas.width = 1024;
 canvas.height = 576;
 
