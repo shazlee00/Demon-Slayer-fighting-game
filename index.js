@@ -35,7 +35,7 @@ const keys = {
   arrowUp: {
     pressed: false,
   },
-  escape:{
+  puase:{
     pressed:false,
   },
 };
@@ -382,7 +382,7 @@ function animate() {
       timerId,
     });
 
-    
+
   }
 }
 
@@ -392,7 +392,7 @@ animate();
 
 window.addEventListener("keydown", (e) => {
 
-  if (e.key === "Escape") {
+  if (e.key === "p") {
 
     if(!isPaused){
       pauseTimer();
@@ -506,8 +506,8 @@ window.addEventListener("keyup", (e) => {
       break;
   }
   switch(e.key){
-    case "Escape":
-      keys.escape.pressed=true;
+    case "p":
+      keys.puase.pressed=true;
       console.log("Escape key pressed");
       break;
   }
