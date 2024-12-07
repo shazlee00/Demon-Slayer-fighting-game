@@ -46,6 +46,10 @@ class Sprite {
     this.drow();
     this.animateFrames();
   }
+
+  puase(){
+    this.drow();
+  }
 }
 
 class Fighter extends Sprite {
